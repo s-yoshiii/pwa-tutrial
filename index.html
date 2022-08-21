@@ -13,9 +13,13 @@
   <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
   <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
   <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+  <script>
+    ons.ready(function () {});
+  </script>
 </head>
 
 <body>
+  <ons-navigator id="navigator" page="page1.html"></ons-navigator>
   <div id='app'>
     <p>{{message}}</p>
     <ons-button onclick="ons.notification.alert('Hello World!')">Click Me</ons-button>
